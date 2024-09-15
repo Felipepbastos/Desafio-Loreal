@@ -1,0 +1,167 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Kodchasan;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+    padding: 0 2%;
+    position:fixed;
+    background-color: #EFEEF3;
+    width: 100vw;
+
+
+    ul{
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        width: 75vw;
+        font-size: 1.3em;
+        gap: 2vw;
+
+    }
+
+        
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+        padding: 2% 5%;
+        height: auto;
+        position:static;
+        width: 100%;
+        
+        img{
+            min-width: 30vw;
+            margin-bottom: 15px;
+        }
+        
+        nav{
+            min-width: 100vw;
+
+            ul{
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                gap: 10px;
+
+                li{
+                    padding: 10px;
+                    font-size: 1.1em;
+                    text-align: center;
+                    
+                }
+            }
+        }
+
+        
+    }
+}
+
+.logo-container{
+    img{
+        width: 100vw;
+    }
+
+    @media (max-width:768px) {
+        display: none;
+    }
+}
+
+.produto-destaque{
+    display: flex;
+    padding: 3% 10%;
+
+    img{
+        max-height: 50vh;
+    }
+
+    div{
+        padding-top: 5vh;
+        padding-left: 10vw;
+        text-align:center;
+        font-size: 1.5rem;
+        
+        p{
+            padding-top: 4vh;
+            font-size: 1.5rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+
+        div{
+            padding-left: 0;
+            padding-top: 2vh;
+            font-size: 1.2rem;
+            
+            p {
+                font-size: 1.2rem;
+                padding-top: 2vh;
+            }
+        }
+    }
+}
+
+.produtos-favoritos {
+    padding: 3% 10%;
+
+    .produtos-favoritos-conteudo {
+        display: flex;
+        align-items: center; 
+        justify-content: space-between; 
+        gap: 5vw; 
+
+        .produtos-favoritos-selecionados {
+            display: flex;
+            gap: 20px; 
+            flex-grow: 1; 
+            justify-content: space-between; 
+        }
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        padding: 2% 5%;
+        
+        .produtos-favoritos-conteudo{
+            display: inline;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            .produtos-favoritos-selecionados { 
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                width: 100%;
+                padding: 10px;
+                margin: 10px;
+                gap: 20px; /* Adiciona espaçamento entre as imagens */
+                
+                
+                img {
+                    max-width: 100px;
+                    height: auto;
+                    margin: 10px; /* Espaçamento adicional ao redor de cada imagem */
+                }
+            }
+        }
+        
+    }
+}
+
+
+
+
+
+
+
